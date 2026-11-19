@@ -1,0 +1,55 @@
+site_name: Tutoriel DEM 2D en C++
+site_description: Construire pas à pas un code DEM pour des disques en 2D, sur les principes d'exaDEM et de Rockable.
+site_url: https://topinvincent.github.io/Tuto_DEM2D/
+repo_url: https://github.com/topinvincent/Tuto_DEM2D
+repo_name: Tuto_DEM2D
+edit_uri: ""
+docs_dir: docs
+site_dir: ../_site
+
+theme:
+  name: material
+  language: fr
+  features:
+    - navigation.footer
+    - navigation.top
+    - toc.follow
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/weather-night
+        name: Mode sombre
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Mode clair
+
+markdown_extensions:
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - tables
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js
+
+validation:
+  links:
+    anchors: warn
