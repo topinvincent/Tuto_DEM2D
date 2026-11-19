@@ -1,0 +1,4 @@
+build/
+sortie_*/
+__pycache__/
+*.o
