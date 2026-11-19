@@ -2,3 +2,6 @@ build/
 sortie_*/
 __pycache__/
 *.o
+_site/
+site/docs/
+site/mkdocs.yml
